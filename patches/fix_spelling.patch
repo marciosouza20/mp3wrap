@@ -1,0 +1,65 @@
+Description: Fixes spelling errors.
+Author: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Last-Update: 2016-04-14
+
+Index: mp3wrap-0.5/mp3wrap.c
+===================================================================
+--- mp3wrap-0.5.orig/mp3wrap.c
++++ mp3wrap-0.5/mp3wrap.c
+@@ -107,7 +107,7 @@ int main (int argc, char *argv[]) {
+ 		printf ("\tmp3wrap [options] OUTPUTFILE MP3FILE1 MP3FILE2 [MP3FILE3]...\n");
+ 		printf ("\nDESCRIPTION\n");
+ 		printf ("\tMp3Wrap joins two or more mp3 files in one large playable mp3\n");
+-		printf ("\twithout losing filename and ID3 informations. You will obtain\n");
++		printf ("\twithout losing filename and ID3 information. You will obtain\n");
+ 		printf ("\ta file named OUTPUTFILE_MP3WRAP.mp3. Do not remove the MP3WRAP\n");
+ 		printf ("\tstring because it's useful to let split program to detect that\n");
+ 		printf ("\tfile is wrapped with this utility.\n");
+@@ -115,7 +115,7 @@ int main (int argc, char *argv[]) {
+ 		printf ("\nOPTIONS\n");
+ 		printf ("\t-a  Add the specified files to an existing wrap file\n");
+ 		printf ("\t-l  List files wrapped in OUTPUTFILE. (-lv for complete infos)\n");
+-		printf ("\t-v  Verbose mode. Will display additional informations.\n");
++		printf ("\t-v  Verbose mode. Will display additional information.\n");
+ 		printf ("\nEXAMPLES\n");
+ 		printf ("\tmp3wrap album.mp3 01.mp3 02.mp3 03.mp3 04.mp3\n");
+ 		printf ("\tmp3wrap -a album_MP3WRAP.mp3 ACDC*.mp3\n");
+Index: mp3wrap-0.5/mp3wrap.1
+===================================================================
+--- mp3wrap-0.5.orig/mp3wrap.1
++++ mp3wrap-0.5/mp3wrap.1
+@@ -65,7 +65,7 @@ mp3wrap \(em Utility for mp3 wrapping
+ .PP
+ \fBMp3Wrap\fP is a free command-line utility,
+ which wraps two or more mp3 files in one large playable file,
+-without losing filename and ID3 informations. It's useful to make
++without losing filename and ID3 information. It's useful to make
+ large files easy to download on internet and then easy to split again
+ in few seconds. You can split original files
+ using \fBmp3splt\fP: http://mp3splt.sourceforge.net
+@@ -73,14 +73,14 @@ using \fBmp3splt\fP: http://mp3splt.sour
+ Mp3Wrap will create a file named: OUTPUTFILE_MP3WRAP.mp3.
+ It's important you don't remove the MP3WRAP string, because
+ this will tell the split program Mp3Splt that the file is wrapped
+-and can be splitted just with -w option.
++and can be split just with -w option.
+ There is also the possibility to specify a custom extension to created file (such as
+ "OUTPUTFILE - MP3WRAP - wrapped by me.mp3"). This can be done
+ using config file (see below), just adding the line "EXT=my ext.mp3" into it.
+ Note that your custom extension must contain MP3WRAP string anywhere,
+ otherwise program will add it by itself.
+ .sp
+-Mp3Wrap will also add to the file a ID3v2 containing informations
++Mp3Wrap will also add to the file a ID3v2 containing information
+ on how to split the file; you can change Title and Album tags but
+ PLEASE DO NOT REMOVE THE COMMENT.
+ .SH "OPTIONS"
+@@ -89,7 +89,7 @@ Add specified files to an existing Mp3Wr
+ .IP "\fB-l\fP         " 10
+ List all files wrapped into a Mp3Wrap file. Doesn't extract anything
+ .IP "\fB-v\fP         " 10
+-Verbose mode. Mp3Wrap will display additional informations on process and, when using list option
++Verbose mode. Mp3Wrap will display additional information on process and, when using list option
+ (-l) it will show many extra infos on wrapped files.
+ 
+ .SH "CONFIGURATION FILE"

@@ -1,0 +1,67 @@
+mp3wrap (0.5-4) unstable; urgency=medium
+
+  * New maintainer. Thanks Emanuele, Nico, Michael
+    and Paul. (Closes: #457131).
+  * Created the directory debian/source and format file.
+  * Created the files mp3wrap.doc-base.* to register doc/*.html
+    in doc-base.
+  * Removed the debian/dirs because is unnecessary.
+  * Updated DH level to 9.
+  * Updated the file debian/docs to remove the files AUTHORS and README.
+  * debian/control:
+      - Added ${misc:Depends} in Depends field.
+      - Added Vcs-Browser and Vcs-Git.
+      - Bumped Standards-Version to 3.9.7.
+  * debian/copyright:
+      - Migrated to 1.0 format.
+      - Rolled back license to LGPL-2+.
+      - Updated file.
+  * debian/patches:
+      - Created the patch avoid_direct_changes.patch.
+      - Created the patch fix_manpage.patch.
+      - Created the patch fix_spelling.patch.
+  * debian/rules:
+      - Enabled hardening options.
+      - Updated to use autoreconf.
+      - Updated to small format.
+  * debian/watch:
+      - Updated to version 4.
+      - Updated file.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Mon, 11 Apr 2016 00:17:41 +0000
+
+mp3wrap (0.5-3) unstable; urgency=low
+
+  * QA upload.
+  * Add debian/watch (Closes: #493717).
+  * Fix typo in long description.
+  * Bumped Standards Version.
+
+ -- Emanuele Rocca <ema@debian.org>  Mon, 11 Aug 2008 20:21:02 +0200
+
+mp3wrap (0.5-2) unstable; urgency=low
+
+  * QA upload.
+  * Set maintainer to QA group.
+  * Bumped Standards Version, set Homepage tag as control field.
+  * Ack NMU (Closes: #386119).
+  * Bumped compat leven and adjusted debhelper dependency.
+  * Fixed broken copyright file.
+  * Fix debian-rules-ignores-make-clean-error lintian warning.
+
+ -- Nico Golde <nion@debian.org>  Sun, 13 Jan 2008 01:58:24 +0100
+
+mp3wrap (0.5-1.1) unstable; urgency=high
+
+  * Non-maintainer Upload
+  * Add patch by Alexander for make mp3wrap work correctly 
+    on ppc again (Closes: #384995)
+
+ -- Michael Ablassmeier <abi@debian.org>  Tue,  5 Sep 2006 13:40:51 +0200
+
+mp3wrap (0.5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Paul Melnikow <pnm@zephyr.to>  Mon, 13 Sep 2004 12:45:52 -0400
+

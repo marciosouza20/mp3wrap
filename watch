@@ -1,0 +1,2 @@
+version=4
+http://sf.net/mp3wrap/mp3wrap-(.*)-src\.(?:tgz|tar\.(?:gz|bz2|xz))

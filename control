@@ -1,0 +1,23 @@
+Source: mp3wrap
+Section: sound
+Priority: optional
+Maintainer: Marcio de Souza Oliveira <m.desouza20@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.7
+Homepage: http://mp3wrap.sourceforge.net/
+Vcs-Git: https://github.com/marciosouza20/mp3wrap.git
+Vcs-Browser: https://github.com/marciosouza20/mp3wrap.git
+
+Package: mp3wrap
+Architecture: any
+Depends: ${shlibs:Depends},${misc:Depends}
+Recommends: mp3splt
+Description: Utility for MP3 wrapping (rolling multiple MP3s into one)
+ Command-line utility that wraps multiple MP3 files into a single, playable
+ MP3, without losing filenames or ID3 information, and without reencoding. Also
+ supports archiving non-audio data such as playlists, info files, and cover
+ images inside the MP3. These files can be unpacked later (using mp3splt, e.g.);
+ ordinary MP3 decoders can play the entire audio stream as one long track.
+ .
+ This is a free, independent alternative to AlbumWrap:
+ http://www.infamus.com/albumwrap/
